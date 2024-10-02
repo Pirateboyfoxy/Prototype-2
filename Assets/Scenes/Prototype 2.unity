@@ -216,6 +216,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50.000004, y: -60.000004, z: 0}
+--- !u!1 &354846791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 354846793}
+  - component: {fileID: 354846792}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &354846792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354846791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b8e0c2dbd4245349c1a6b81677eac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 5882861607809148618, guid: ae6d0fe62a88f464ebce31d572f3237e, type: 3}
+  - {fileID: 3970429040202224574, guid: 1b43874d771734ea3aa5328d433bdded, type: 3}
+  - {fileID: 8440517775603674195, guid: 3f5bea155d8a84006b3740a9cc0a8efc, type: 3}
+--- !u!4 &354846793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354846791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1866553, y: 0.4525274, z: 15.997111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425805626
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +490,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -491,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0c3b1d792f7343b7a23aa2191e08f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 7193883963484545997}
+  projectilePrefab: {fileID: 1385052718825663057, guid: 61f86f120a36e4431bc68d82b17c9df5, type: 3}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,11 +893,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae6d0fe62a88f464ebce31d572f3237e, type: 3}
---- !u!1 &7193883963484545997 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1385052718825663057, guid: 61f86f120a36e4431bc68d82b17c9df5, type: 3}
-  m_PrefabInstance: {fileID: 8137297839486847388}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8137297839486847388
 PrefabInstance:
   m_ObjectHideFlags: 0

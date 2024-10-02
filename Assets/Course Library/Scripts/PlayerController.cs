@@ -17,14 +17,14 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * 5 * Time.deltaTime * horizontalInput);
+        transform.Translate(Vector3.right * 10 * Time.deltaTime * horizontalInput);
 
-        if(transform.position.x < -10)
+        if(transform.position.x < -20)
         {
             transform.position = new Vector3(-10, transform.position.y, transform.position.z);
         }
 
-         if(transform.position.x > 10)
+         if(transform.position.x > 20)
         {
             transform.position = new Vector3(10, transform.position.y, transform.position.z);
         }
